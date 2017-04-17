@@ -5,17 +5,17 @@ function get (url, data = null) {
         url,
         data
     )
-  return result.data
+  return result
 }
 function post (url, data = null) {
   let result = axios.post(
         url,
         data
     )
-  return result.data
+  return result
 }
 
-export default{
+export {
   get,
   post
 }
