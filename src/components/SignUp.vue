@@ -3,7 +3,7 @@
   <h1>{{ msg }}</h1>
   <h2>Essential Links</h2>
   <form class="" action="index.html" method="post">
-    <input type="text" v-model="userName" value="">
+    <input type="text" v-model="username" value="">
     <input type="password" v-model="password" value="">
     <input type="password" v-model="passwordRepead" value="">
     <select v-model="departmentId">
@@ -24,7 +24,7 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       departments: [],
       departmentId: 0,
-      userName: '',
+      username: '',
       password: '',
       passwordRepead: ''
     }
@@ -37,7 +37,7 @@ export default {
   methods: {
     signUp: function () {
       let params = {
-        userName: this.userName,
+        username: this.username,
         password: this.password,
         department_id: this.departmentId
       }

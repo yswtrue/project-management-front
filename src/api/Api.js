@@ -8,9 +8,14 @@ function get (url, data = null) {
   return result
 }
 function post (url, data = null) {
+  // var config = {
+  //   headers: {'Content-Type': 'application/json; charset=utf-8'}
+  // }
+
   let result = axios.post(
         url,
-        data
+        data,
+        // config
     )
   return result
 }
